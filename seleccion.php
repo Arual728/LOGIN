@@ -1,4 +1,4 @@
-<?php  include("apertura.php"); 
+<?php  include("Conexion.php"); 
 $ssql = "select id, usuario from usuarios"; 
 $db_blog = mysql_query($ssql); 
 while($fila = mysql_fetch_array($db_blog)) { 
