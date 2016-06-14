@@ -1,24 +1,3 @@
-<style type="text/css"> 
-<center>
-*{ 
-    font-size: 14px; 
-} 
-body{ 
-background:#aaa; 
-} 
-form { 
-    background: none repeat scroll 0 0 #F1F1F1; 
-    border: 1px solid #DDDDDD; 
-    font-family: sans-serif; 
-    margin: 0 auto; 
-    padding: 50px; 
-    width: 310px; 
-    box-shadow:0px 0px 30px black; 
-    border-radius:10px; 
-}
-</center>
-</style>
-
 <form action="validar_usuario.php" method="post">
  <table>
  <center>
@@ -31,7 +10,7 @@ form {
    <td>Password:</td>
    <td><input name="password_usuario" required="required" type="password" /></td> 
   </tr>
-   <td colspan="2"><input name="iniciar" type="submit" value="Iniciar Sesi髇" /></td>
+   <td colspan="2"><input name="iniciar" type="submit" value="Iniciar Sesi贸n" /></td>
    <td><a href="seleccion.php">+Modificar</a></td>
    <tr>
    <td><td><td><a href="campo2.php">+Eliminar</a></td></td></td>
@@ -41,7 +20,7 @@ form {
 </form>
 
 <?php 
-session_start();//crea una sesi髇 para ser usada mediante una petici髇 GET o POST, o pasado por una cookie y la sentencia include_once es la usaremos para incluir el archivo de conexi髇 a la base de datos que creamos anteriormente.
+session_start();//crea una sesi贸n para ser usada mediante una petici贸n GET o POST, o pasado por una cookie y la sentencia include_once es la usaremos para incluir el archivo de conexi贸n a la base de datos que creamos anteriormente.
 include_once "conexion.php"; 
 ?>
 
@@ -110,3 +89,24 @@ if(isset($_POST['enviar']))
     } 
 } 
 ?>
+<style type="text/css"> 
+<center>
+*{ 
+    font-size: 14px; 
+} 
+body{ 
+background:#aaa; 
+} 
+form { 
+    background: none repeat scroll 0 0 #F1F1F1; 
+    border: 1px solid #DDDDDD; 
+    font-family: sans-serif; 
+    margin: 0 auto; 
+    padding: 50px; 
+    width: 310px; 
+    box-shadow:0px 0px 30px black; 
+    border-radius:10px; 
+}
+</center>
+</style>
+
